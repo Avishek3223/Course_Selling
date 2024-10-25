@@ -1,0 +1,19 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql" // Change from sqlite to postgresql
+  url      = env("DATABASE_URL")
+}
+
+model Course {
+  id          Int      @id @default(autoincrement())
+  course_name String
+  description String?  // Optional field
+  created_at  DateTime @default(now())
+
+  @@map("courses") // Maps this model to the "courses" table in PostgreSQL
+}

@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    /* Projects */
+    "incremental": true,                                /* Enable incremental builds to speed up the compilation process. */
+
+    /* Language and Environment */
+    "target": "es2020",                                 /* Set a more recent ECMAScript version for better syntax support. */
+    "lib": ["dom", "es2020"],                           /* Include DOM and ECMAScript libraries for frontend and backend support. */
+    "module": "commonjs",                               /* Keep CommonJS for Node.js backend, especially with GraphQL. */
+    "moduleResolution": "node",                         /* Set module resolution to 'node' to support imports properly. */
+    "resolveJsonModule": true,                          /* Allow importing JSON files directly. */
+    "allowSyntheticDefaultImports": true,               /* Ensure smooth imports from both ES modules and CommonJS. */
+    "esModuleInterop": true,                            /* Eases interop with CommonJS modules. */
+    "skipLibCheck": true,                               /* Skip checking library files for faster builds. */
+    "forceConsistentCasingInFileNames": true,           /* Ensure consistent casing across imports. */
+
+    /* JavaScript Support */
+    "allowJs": true,                                    /* Allow JavaScript files within the project. */
+    "checkJs": false,                                   /* Disable strict checking of JS files if you're only using TypeScript. */
+
+    /* Emit */
+    "declaration": true,                                /* Generate .d.ts declaration files for TypeScript files. */
+    "sourceMap": true,                                  /* Enable source maps for better debugging. */
+    "outDir": "./dist",                                 /* Emit compiled files to the 'dist' directory. */
+
+    /* Type Checking */
+    "strict": true,                                     /* Enable strict type checking across the project. */
+    "noImplicitAny": true,                              /* Prevent implicit 'any' types for safety. */
+    "strictNullChecks": true,                           /* Ensure proper null and undefined handling. */
+    "strictBindCallApply": true,                        /* Check parameters for bind, call, and apply methods. */
+    "noUnusedLocals": true,                             /* Error on unused variables to keep the code clean. */
+    "noUnusedParameters": true,                         /* Error on unused parameters. */
+    "noImplicitReturns": true,                          /* Ensure functions explicitly return a value. */
+    "noFallthroughCasesInSwitch": true,                 /* Prevent accidental fallthrough in switch cases. */
+
+    /* Interop Constraints */
+    "isolatedModules": true,                            /* Ensure files can be transpiled individually. */
+
+    /* Completeness */
+    "skipDefaultLibCheck": true                         /* Skip default library checks for faster builds. */
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],           /* Include all TypeScript and TSX files in the 'src' folder. */
+  "exclude": ["node_modules", "dist"]                   /* Exclude unnecessary folders from the project. */
+}
